@@ -2,7 +2,7 @@ name: gh200Wf
 on: push
 jobs:
   hw:
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-latest
     steps:
       - name: Say hi
         run: echo "Hi"
@@ -17,6 +17,7 @@ jobs:
           figlet "yo GH 200"
           echo "-------"
           figlet -f slant "GHA and GHAR"
+          figlet -f digital "GHA and GHAR"
           echo "DONE"
         
         
