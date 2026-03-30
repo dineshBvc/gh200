@@ -1,0 +1,22 @@
+name: gh200Wf
+on: push
+jobs:
+  hw:
+    runs-on: ubuntu-slim
+    steps:
+      - name: Say hi
+        run: echo "Hi"
+      - name: checkout repo
+        uses: actions/checkout@v6
+      - name: list files
+        run: ls -lrtha
+
+      - name: gen ASCII
+        run : |
+          sudo apt-get install -y figlet
+          figlet "yo GH 200"
+          echo "-------"
+          figlet -f slant "GHA and GHAR"
+          echo "DONE"
+        
+        
